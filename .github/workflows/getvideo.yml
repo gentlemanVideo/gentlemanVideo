@@ -1,8 +1,12 @@
 name: GetVideoM3u8
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+  schedule:
+    - cron: '0 20 * * *'
+env:
+  TZ: Asia/Shanghai
+  
 jobs:
   build-linux:
     runs-on: ubuntu-latest
