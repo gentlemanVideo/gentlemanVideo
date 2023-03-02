@@ -1,9 +1,9 @@
 name: GetVideoM3u8
 on:
   push:
-    branches: [ main ]
-  schedule:
-    - cron: '0 20 * * *'
+    branches: [ main2 ]
+  #schedule:
+    #- cron: '0 20 * * *'
 env:
   TZ: Asia/Shanghai
   
